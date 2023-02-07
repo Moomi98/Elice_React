@@ -52,6 +52,11 @@ const Signup = () => {
        회원가입에 실패했다면 (요청에 에러가 발생했다면) signupMessage에 "회원가입에 실패했습니다!"라는 문자열로 변경되도록 합니다. */
   };
 
+  /*
+    1. useEffect를 활용하여 id, password state 변경 시 console.log()를 활용하여 변화된 state 값을 출력합니다.
+    useEffect의 두 번째 인자인 deps 배열에는 id와 password를 등록합니다.
+  */
+
   return (
     <div className="signup_container">
       <h1>회원가입</h1>
@@ -64,6 +69,7 @@ const Signup = () => {
 
         {/* 2. 아이디의 길이 1 이상이면서 8자 이상 15자 이하가 아니라면 경고를 출력하는 조건부 렌더링을 작성합니다.
             태그는 p 태그를 사용하며 className은 "signup_warning_message"를 적용합니다.
+            메시지 내용은 "아이디는 8자 이상 15자 이하로 입력해주세요."를 출력하도록 합니다.
             조건부 렌더링에는 삼항 연산자 혹은 AND 연산자를 활용합니다.
         */}
         <input
